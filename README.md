@@ -1,4 +1,4 @@
-# Kata-Java-AFunctionHasNoName
+# Kata-Java-HumanAfterAll
 This kata is inspired by the [french social security number system](https://en.wikipedia.org/wiki/INSEE_code).
 
 ## Instructions
