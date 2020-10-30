@@ -34,4 +34,4 @@ For example, the number 1 98 06 78 123 456 78 represents :
 In the `src/main` folder, you will find the class `Human` with the current implementation of `__init__` to complete.
 
 ## Test it
-You can test your implementation by running the `src/test/TestHuman` class.
+You can test your implementation by running the `src/test/HumanTest` class.
