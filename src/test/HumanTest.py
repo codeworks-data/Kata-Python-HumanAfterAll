@@ -6,7 +6,7 @@ from main.Human import Human
 
 class TestHuman(unittest.TestCase):
     male_ssn = "1 98 06 78 123 456 78"
-    female_ssn = "2 85 11 92 12 345 678"
+    female_ssn = "2 10 11 92 12 345 678"
 
     def test_one_human(self):
         one_human = Human(self.male_ssn)
@@ -20,9 +20,13 @@ class TestHuman(unittest.TestCase):
         one_female = Human(self.female_ssn)
         self.assertEqual(one_female.sex, Sex.FEMALE)
 
-    def test_year_of_birth(self):
-        one_human_born_in_98 = Human(self.male_ssn)
-        self.assertEqual(one_human_born_in_98.year_of_birth, "1998")
+    def test_year_of_birth_1998(self):
+        one_human_born_in_1998 = Human(self.male_ssn)
+        self.assertEqual(one_human_born_in_1998.year_of_birth, "1998")
+
+    def test_year_of_birth_2010(self):
+        one_human_born_in_2010 = Human(self.female_ssn)
+        self.assertEqual(one_human_born_in_2010.year_of_birth, "2010")
 
     def test_month_of_birth(self):
         one_human_born_in_november = Human(self.female_ssn)
