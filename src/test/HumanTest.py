@@ -17,7 +17,7 @@ class TestHuman(unittest.TestCase):
         self.assertEqual(one_male.sex, Sex.MALE)
 
     def test_one_female(self):
-        one_female = Human(self.male_ssn)
+        one_female = Human(self.female_ssn)
         self.assertEqual(one_female.sex, Sex.FEMALE)
 
     def test_year_of_birth(self):
